@@ -1,11 +1,3 @@
-.listsContainer{
-  width: 96%;
-  margin: 15px auto;
-  display: flex;
-  gap: 1%;
-  align-items: flex-start;
-}
-
 .addListBlock{
   flex-basis: 20%;
   position: relative;

@@ -1,12 +1,5 @@
-import React, { useEffect } from 'react';
-import { observer } from 'mobx-react';
-import { ItemTypes } from '../Types';
-import { useStore } from '../../../app/stores';
+import React from 'react';
 
-export default function Card({
-  card, listId, boardId,
-}) {
-  const { BoardsStore, ItemsData } = useStore();
-
+export default function Card({ card }) {
   return <div className="cardItem">{card.cardTitle}</div>;
 }

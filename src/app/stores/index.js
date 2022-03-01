@@ -1,13 +1,11 @@
 import { MobXProviderContext } from 'mobx-react';
 import React from 'react';
 import BoardsStore from './BoardsStore';
-import ItemsData from './ItemsData';
 
 // eslint-disable-next-line import/prefer-default-export
 export function createStores() {
   return {
     BoardsStore,
-    ItemsData,
   };
 }
 

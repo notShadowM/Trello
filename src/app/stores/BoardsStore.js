@@ -27,7 +27,7 @@ class BoardsStore {
 
   addList(listName, boardId) {
     const board = this.boards.find((e) => e.id === boardId);
-    board.list.push({ id: `${board.list.length}`, listTitle: listName, cards: [] });
+    board.list.push({ id: board.list.length, listTitle: listName, cards: [] });
   }
 
   switchLists(dragResult, boardId) {
@@ -52,7 +52,6 @@ class BoardsStore {
       });
       temp2.id = addedIndex + 1;
     }
-    // [list[firstList], list[secList]] = [list[secList], list[firstList]];
   }
 
   addCard(cardName, listId, boardId) {
@@ -61,24 +60,9 @@ class BoardsStore {
     list.cards.push({ id: list.cards.length, cardTitle: cardName });
   }
 
-  // switchCards(cardId1, cardId2, listId1, listId2, boardId) {
-  //   const cards1 = this.boards.find((e) => e.id === boardId).list.find((e) => e.id === listId1).cards;
-  //   const firstCard = cards1.findIndex((e) => e.id === cardId1);
-  //   const cards2 = this.boards.find((e) => e.id === boardId).list.find((e) => e.id === listId2).cards;
-  //   const secCard = cards2.findIndex((e) => e.id === cardId2);
-
-  //   setTimeout(() => {
-  //     const temp = cards1[firstCard];
-  //     cards1.splice(firstCard, 1);
-  //     cards2.splice(secCard, 0, temp);
-  //   }, 0);
-  // }
-
   switchCards(dragResult, listId, boardId) {
     const { list } = this.boards.find((e) => e.id === boardId);
     const { removedIndex, addedIndex, payload } = dragResult;
-
-    // console.log(payload.card);
 
     if (removedIndex !== null) {
       const { cards } = list.find((e) => e.id === payload.listId);

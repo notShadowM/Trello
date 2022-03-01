@@ -20,7 +20,6 @@ function OneBoard() {
   const board = BoardsStore.boards.find((e) => e.id === boardId);
   const lists = board.list;
   const addList = () => {
-    // BoardsStore.switchLists('alaa', 'ali', boardName);
     if (text) {
       BoardsStore.addList(text, boardId);
       setText('');
@@ -34,7 +33,6 @@ function OneBoard() {
       <Container
         orientation="horizontal"
         onDrop={(e) => BoardsStore.switchLists(e, boardId)}
-        // className="listsContainer"
         style={{
           display: 'flex', width: '96%', margin: '15px auto', gap: '1%', alignItems: 'flex-start',
         }}
@@ -49,7 +47,7 @@ function OneBoard() {
       >
         {lists?.map((listItem, index) => <Draggable key={index}><List boardId={boardId} list={listItem} /></Draggable>)}
 
-        {/* <div className="addListBlock">
+        <div className="addListBlock">
           <div className="addListThumbnail " onClick={() => { setShowAdd(true); addInput.current.focus(); }}>
             <PlusOutlined style={{ color: '#fff', fontSize: '15px' }} />
             {' '}
@@ -62,8 +60,7 @@ function OneBoard() {
               <CloseOutlined style={{ fontSize: '20px' }} onClick={() => { setShowAdd(false); setText(''); }} />
             </div>
           </form>
-        </div> */}
-
+        </div>
       </Container>
     </>
   );

@@ -1,9 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import { Routes, Route, Link } from 'react-router-dom';
-// import { DndProvider } from 'react-dnd';
-// import { HTML5Backend } from 'react-dnd-html5-backend';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Boards from './Components/Boards';
 import OneBoard from './Components/OneBoard';
@@ -14,15 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Boards />} />
-        <Route
-          exact
-          path="/:boardName"
-          element={(
-            // <DndProvider backend={HTML5Backend}>
-            <OneBoard />
-            // </DndProvider>
-        )}
-        />
+        <Route exact path="/:boardName" element={<OneBoard />} />
       </Routes>
 
     </div>
