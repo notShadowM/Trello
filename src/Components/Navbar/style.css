@@ -1,0 +1,82 @@
+.ant-menu{
+  background-color: #026AA7;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  padding: 20px 15px;
+}
+
+.ant-menu::after,.ant-menu::before{
+  content: none;
+}
+
+
+.rightSide{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.ListIcon{
+  font-size: 20px;
+}
+
+.trelloTitle{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menuItemsList{
+  height: 32px;
+  padding: 3px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 3px;
+}
+
+.menuItemsList:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.itemListIcon{
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.leftSide{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.leftSideIcon{
+  font-size: 18px;
+}
+
+.avatar{
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+.user-avatar{
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 50%;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.searchIcon{
+  font-size: 18px;
+  position: absolute;
+  left: 5px;
+}

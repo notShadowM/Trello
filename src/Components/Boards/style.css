@@ -1,0 +1,56 @@
+.boardContainer{
+  width: 96%;
+  display: flex;
+  gap: 5%;
+  margin: 20px auto;
+}
+
+.board{
+  flex-basis: 16%;
+  height: 100px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.createCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #172b4d;
+  background-color: #091e420a;
+  cursor: pointer;
+}
+
+.createCard:hover{
+  background-color: #091e4214;
+}
+
+.modalTitle{
+  font-weight: bold;
+}
+
+.colors{
+  width: 75%;
+  display: flex;
+  gap: 5%;
+  margin: 15px auto;
+}
+.color{
+  cursor: pointer;
+  flex-basis: 16%;
+  height: 40px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleInput{
+  margin-top: 3px;
+}
+
+.realCard{
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+}

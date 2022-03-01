@@ -1,0 +1,132 @@
+.listsContainer{
+  width: 96%;
+  margin: 15px auto;
+  display: flex;
+  gap: 1%;
+  align-items: flex-start;
+}
+
+.addListBlock{
+  flex-basis: 20%;
+  position: relative;
+}
+
+.addListThumbnail{
+  width: 100%;
+  color: #fff;
+  padding: 10px 14px;
+  background-color: #ffffff3d;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.addListThumbnail:hover{
+  background-color: #ffffff52;
+}
+
+.addList{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ebecf0;
+  border-radius: 3px;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.showAddList{
+  padding: 4px;
+  max-height: 500px;
+  transition: all 0.2s ease-in-out;
+}
+
+.listInput{
+  border-color: #0079bf;
+  border-width: 2px;
+}
+
+.addListSecRow{
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.listCard{
+  flex-basis: 20%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #ebecf0;
+  position: relative;
+}
+
+.draggedListCard{
+  /* transform: rotate(10deg); */
+  opacity: 0;
+  /* display: none; */
+}
+
+.skeleton{
+  height: 100px;
+}
+
+.addCardRow{
+  color: #5e6c84;
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+.addCard{
+  width: 100%;
+  background-color: #ebecf0;
+  border-radius: 3px;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.showAddCard{
+  padding: 4px;
+  max-height: 200px;
+  transition: all 0.2s ease-in-out;
+}
+
+.cardInput{
+  border-color: #0079bf;
+  border-width: 2px;
+}
+
+.cardItem{
+  width: 96%;
+  margin: 5px auto;
+  padding: 6px 8px 2px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #091e4240;
+  color: #172b4d;
+}
+
+.card-ghost {
+  transition: transform 0.18s ease;
+  transform: rotateZ(5deg)
+}
+
+.card-ghost-drop{
+  transition: transform 0.18s ease-in-out;
+  transform: rotateZ(0deg)
+}
+
+.drop-preview {
+  background-color: rgba(150, 150, 200, 0.1);
+  border: 1px dashed #abc;
+  margin: 5px;
+}
