@@ -1,5 +1,11 @@
+.test{
+  display: flex;
+  padding: 0 20px;
+  gap:5px;
+}
 .addListBlock{
-  flex-basis: 20%;
+  margin-top: 15px;
+  flex-basis: 18%;
   position: relative;
 }
 
